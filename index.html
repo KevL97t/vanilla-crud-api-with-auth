@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header-main-container">
+        <h1>CRUD API de Registro de usuarios</h1>
+    </header>
+    <section id="login-section" class="login-main-container">
+        <p id="login-text"></p>
+        <form class="main-form" action="">
+            <!-- <label for="email">email</label> -->
+            <input class="main-form-input" id="email-input" type="email" name="email" placeholder="email" required>
+            <br>
+            <br>
+            <!-- <label for="password">password</label> -->
+            <input class="main-form-input" id="password-input" type="password" name="password" placeholder="password" required>
+            <br>
+            <br>
+            <input class="main-form-button" id="submit-form-button" type="submit" value="vamos!">
+        </form>
+    </section>
+    <div class="bienvenida"></div>
+    <section class="crud">
+        <article class="crud-container">
+            <h2 class="crud-title">Agregar registro</h2>
+            <form class="crud-form">
+                <input class="crud-form-input first" id="form-name" type="text" name="nombre" placeholder="Nombre" required>
+                <br>
+                <input class="crud-form-input"  id="form-lastname" type="text" name="apellidos" placeholder="Apellidos" required>
+                <br>
+                <input class="crud-form-input"  id="form-email" type="email" name="correo" placeholder="Correo electronico" required>
+                <br>
+                <br>
+                <input class="crud-form-button" type="submit" value="enviar">
+                <input type="hidden" name="id">
+            </form>
+        </article>
+        <article class="crud-table-container">
+            <h2>Ver Registros</h2>
+            <table class="crud-table">
+                <thead>
+                    <tr>
+                        <th >Nombre</th>
+                        <th>Apellidos</th>
+                        <th>Correo</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>      
+                </tbody>
+            </table>
+        </article>
+    </section>
+    <template id="crud-template">
+        <tr>
+            <td class="name"></td>
+            <td class="last-name"></td>
+            <td class="email"></td>
+            <td>
+                <button class="edit">Editar</button>
+                <button class="delete">Eliminar</button>
+            </td>      
+        </tr>
+    </template>
+    <script src="./Scripts/index.js"></script>
+</body>
+</html>
