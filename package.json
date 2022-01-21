@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/KevL97t/vanilla-crud-api-with-auth/issues"
   },
-  "homepage": "https://github.com/KevL97t/vanilla-crud-api-with-auth#readme"
+  "homepage": "https://github.com/KevL97t/vanilla-crud-api-with-auth#readme",
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
+  }
 }
