@@ -1,0 +1,19 @@
+{
+  "name": "vanilla-crud-api-with-auth",
+  "version": "1.0.0",
+  "description": "This is a crud api with auth created with vanilla JS for a technical interview",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KevL97t/vanilla-crud-api-with-auth.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KevL97t/vanilla-crud-api-with-auth/issues"
+  },
+  "homepage": "https://github.com/KevL97t/vanilla-crud-api-with-auth#readme"
+}
